@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/root.css">
+    <title>Lloyd Arnold</title>
+
+  </head>
+
+  <body>
+
+    <header>
+      <ul class="nav">
+        <li class="navlink"><a href="index.html">Home</a></li>
+        <li class="navlink"><a href="web.html">Web Development</a></li>
+        <li class="navlink"><a href="soft-dev.html">Software Development</a></li>
+        <li class="navlink"><a href="contact.html">Get In Touch</a></li>
+      </ul>
+
+    </header>
+
+    <div id="container">
+      <!-- all main content goes in here -->
+
+
+    </div>
+
+    <footer class = "footer">
+      <p> Copyright &copy; Lloyd Arnold <span id="getCurrentDate"></span></p>
+    </footer>
+
+    <script type="text/javascript">
+      var dt = new Date();
+      document.getElementById('getCurrentDate').innerHTML = dt.getFullYear();
+    </script>
+
+  </body>
