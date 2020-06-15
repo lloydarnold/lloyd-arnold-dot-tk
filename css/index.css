@@ -10,6 +10,12 @@
   text-align: justify;
 }
 
-.side-content  p {
+.side-content p {
   padding: 10px 0px 0px 10px;
 }
+
+ul {
+  padding-left: 35px;
+}
+
+li { padding: 5px 0px; }
