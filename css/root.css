@@ -3,7 +3,9 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
-    font-family: arial;
+    font-family: ff-tisa-sans-web-pro, sans-serif;
+    font-style: normal;
+    font-weight: 100;
 }
 
 html, body {
