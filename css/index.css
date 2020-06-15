@@ -1,0 +1,15 @@
+.left-img {
+  width: 40%;
+  height:  auto;
+}
+
+.side-content {
+  padding-left: 3vw;
+  width: 40%;
+  height: auto;
+  text-align: justify;
+}
+
+.side-content  p {
+  padding: 10px 0px 0px 10px;
+}
