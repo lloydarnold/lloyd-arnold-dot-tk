@@ -39,6 +39,12 @@ footer {
   padding: 20px;
 }
 
+img {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
 #container {
   flex: 1 0 auto;
   display: flex;
