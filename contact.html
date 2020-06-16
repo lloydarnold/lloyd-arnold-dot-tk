@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/contact.css" type="text/css">
     <title>Lloyd Arnold</title>
 
+    <script src="./js/contact-handler.js"></script>
   </head>
 
   <body>
@@ -29,17 +30,17 @@
       <h2> Get In Touch </h2>
       <br>
       <div class="form-container">
-        <form>
-          <input id="contact-name" type="text" aria-label="Name"
+        <form name="contact">
+          <input id="contact-name" type="text" name="nameIn" aria-label="Name"
                 placeholder="Name"> </input>
-          <input id="contact-email" type="text" aria-label="Email"
+          <input id="contact-email" type="text" name="emailIn" aria-label="Email"
                 placeholder="Email"> </input>
-          <input id="contact-phone" type="text" aria-label="Phone Number"
+          <input id="contact-phone" type="text" name="phoneNumberIn" aria-label="Phone Number"
                 placeholder="Phone Number (optional)"> </input>
-          <textarea rows="8" id="input-message" aria-label="Message"
+          <textarea rows="8" id="input-message" name="messageIn" aria-label="Message"
                 placeholder="Your idea"></textarea>
-          <input type="submit" id="submit-button" aria-label="Submit"
-                value="Send"> </input>
+          <input type="button" id="submit-button" aria-label="Submit"
+                value="Send" onclick="formHandler(this.form)"> </input>
         </form>
       </div>
     </div>
