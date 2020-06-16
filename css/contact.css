@@ -5,11 +5,21 @@
 .form-container {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  text-align: center;
 }
 
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  align-self: center;
+  width: 95%;
+  padding: 12px 20px;
+  margin: 10px 0;
   box-sizing: border-box;
 }
