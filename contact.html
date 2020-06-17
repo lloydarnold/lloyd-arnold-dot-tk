@@ -30,7 +30,7 @@
       <h2> Get In Touch </h2>
       <br>
       <div class="form-container">
-        <form name="contact">
+        <form name="contact" action="/action_page.php" onsubmit="return validateForm(this.form)" method="post">
           <input id="contact-name" type="text" name="nameIn" aria-label="Name"
                 placeholder="Name"> </input>
           <input id="contact-email" type="text" name="emailIn" aria-label="Email"
@@ -39,7 +39,7 @@
                 placeholder="Phone Number (optional)"> </input>
           <textarea rows="8" id="input-message" name="messageIn" aria-label="Message"
                 placeholder="Your idea"></textarea>
-          <input type="button" id="submit-button" aria-label="Submit"
+          <input type="submit" id="submit-button" aria-label="Submit"
                 value="Send" onclick="formHandler(this.form)"> </input>
         </form>
       </div>
