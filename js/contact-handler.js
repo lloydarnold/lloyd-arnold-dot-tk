@@ -9,8 +9,6 @@ function formHandler (form) {
 
   }
 
-  /* alert ("Your name is : " + name); */
-
 }
 
 function validEmail (email) {
@@ -22,7 +20,6 @@ function validEmail (email) {
 function highlightEmail (form) {
   form.emailIn.style.borderColor = "#ff2200";
   fadeBack(form.emailIn, "#BBBBBB");
-  // setTimeout( function(){form.emailIn.style.border = "1px solid #BBB";}, 1500 )
 }
 
 function fadeBack (element, targetCol) {
@@ -36,7 +33,6 @@ function fadeBack (element, targetCol) {
   deltaG = (hexToG(targetCol) - startCol[1]) / steps
   deltaB = (hexToB(targetCol) - startCol[2]) / steps
 
-  var colourStack = new Array(steps)
   for (var i = 0; i < steps; i++) {
     temp = `rgb( ${ startCol[0] + (deltaR * i)}, ${ startCol[1] + deltaG * i}, ${startCol[2] + deltaB * i} )`;
     setColour(element, temp, i)
@@ -51,7 +47,6 @@ function hexToR(h) {return parseInt((cutHex(h)).substring(0,2),16)}
 function hexToG(h) {return parseInt((cutHex(h)).substring(2,4),16)}
 function hexToB(h) {return parseInt((cutHex(h)).substring(4,6),16)}
 function cutHex(h) {return (h.charAt(0)=="#") ? h.substring(1,7):h}
-
 function formatRGB(raw) {
   raw = raw.substring(4, raw.length-1)
            .replace(/ /g, '')
