@@ -4,11 +4,35 @@ function formHandler (form) {
   var phoneNum = form.phoneNumberIn.value;
   var message = form.messageIn.value;
 
-  if (!validEmail(email)) {
-    highlightEmail(form);
+  var valid = true;
 
+  if (name == "") {
+    highlightElement(form.nameIn);
+    valid = false;
   }
 
+  if (!validEmail(email)) {
+    highlightElement(form.emailIn);
+    valid = false;
+  }
+
+  if (message == "") {
+    highlightElement(form.messageIn);
+    valid = false;
+  }
+
+  if (valid) {
+    handle();
+    reset(form);
+  }
+
+}
+
+function reset(form) {
+  form.nameIn.value="";
+  form.emailIn.value="";
+  form.phoneNumberIn.value="";
+  form.messageIn.value="";
 }
 
 function validEmail (email) {
@@ -17,13 +41,13 @@ function validEmail (email) {
   return emailPattern.test(email);
 }
 
-function highlightEmail (form) {
-  form.emailIn.style.borderColor = "#ff2200";
-  fadeBack(form.emailIn, "#BBBBBB");
+function highlightElement (element) {
+  element.style.borderColor = "#ff2200";
+  fadeBack(element, "#BBBBBB");
 }
 
 function fadeBack (element, targetCol) {
-  // four second fade
+  // three second fade
   var startCol = element.style.borderColor;
   var steps = 30;
 
