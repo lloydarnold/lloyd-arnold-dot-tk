@@ -28,7 +28,7 @@ function highlightEmail (form) {
 function fadeBack (element, targetCol) {
   // four second fade
   var startCol = element.style.borderColor;
-  var steps = 40;
+  var steps = 100;
 
   startCol = formatRGB(startCol);
 
@@ -37,8 +37,8 @@ function fadeBack (element, targetCol) {
   deltaB = (hexToB(targetCol) - startCol[2]) / steps
 
   for (var i = 0; i < steps; i++) {
-    temp = `( ${ startCol[0] + (deltaR * i)}, ${ startCol[1] + deltaG * i}, ${startCol[2] + deltaB * i} )`;
-    setTimeout(function() {element.style.borderColor = temp;} , 100);
+    temp = `rgb( ${ startCol[0] + (deltaR * i)}, ${ startCol[1] + deltaG * i}, ${startCol[2] + deltaB * i} )`;
+    setTimeout(function() {element.style.borderColor = temp;} , 1000);
   }
 }
 
