@@ -1,4 +1,5 @@
-function formHandler (form) {
+function formHandler () {
+  var form = document.getElementById("contact-form");
   var name = form.nameIn.value;
   var email = form.emailIn.value;
   var phoneNum = form.phoneNumberIn.value;
