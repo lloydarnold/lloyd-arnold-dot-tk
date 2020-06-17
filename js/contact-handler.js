@@ -21,10 +21,7 @@ function formHandler (form) {
     valid = false;
   }
 
-  if (valid) {
-    handle();
-    reset(form);
-  }
+  return valid;
 
 }
 
