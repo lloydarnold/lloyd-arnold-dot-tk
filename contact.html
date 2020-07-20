@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/root.css" type="text/css">
     <link rel="stylesheet" href="./css/contact.css" type="text/css">
+
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+
     <title>Lloyd Arnold</title>
 
     <script src="./js/contact-handler.js"></script>
@@ -33,18 +36,25 @@
           form data doesn't come through - please reach out to me on linkedIn if
           you have any queries </p>
       <div class="form-container">
-        <form id="contact-form" name="contact" action="./php/contact-handler.php"
-              onsubmit="return(formHandler(this.form))" method="post">
+        <form action="https://send.pageclip.co/dh42BViNqE3GrI5p2rXh4jeXkmL4NBaJ/website-contact"
+              class="pageclip-form" method="post">
+
           <input id="contact-name" type="text" name="nameIn" aria-label="Name"
                 placeholder="Name"> </input>
+
           <input id="contact-email" type="text" name="emailIn" aria-label="Email"
                 placeholder="Email"> </input>
+
           <input id="contact-phone" type="text" name="phoneNumberIn" aria-label="Phone Number"
                 placeholder="Phone Number (optional)"> </input>
+
           <textarea rows="8" id="input-message" name="messageIn" aria-label="Message"
                 placeholder="Your idea"></textarea>
-          <input type="submit" id="submit-button" aria-label="Submit"
-                value="Send"> </input>
+
+          <button type="submit" class="pageclip-form__submit">
+              <span>Send</span>
+          </button>
+
         </form>
       </div>
     </div>
@@ -57,5 +67,7 @@
       var dt = new Date();
       document.getElementById('getCurrentDate').innerHTML = dt.getFullYear();
     </script>
+
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
   </body>
